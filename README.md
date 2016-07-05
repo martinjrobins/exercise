@@ -107,4 +107,27 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     $ git rebase master
     ~~~
 
+## Exercise 3: Collaboration
+
+1. Push the new branch that you created in the previous exercise to your remote 
+   repository
+
+    ~~~bash
+    $ git push origin new_branch
+    ~~~
+
+2. Get the person sitting next to you to clone your repository and checkout your 
+   new branch. 
+
+    ~~~bash
+    $ git checkout --track origin/new_branch
+    ~~~
+
+3. Both of you make commits to the new branch. Have one person push their 
+   commits to the remote and the other rebase their own commits on top. Swap 
+   roles and repeat the process. Try merging your commits instead of rebasing to 
+   see the difference between the two commands.
+
+4. Once you are happy with the state of your new branch, merge or rebase it onto 
+   your `master` branch and bask in the glow of your new Git skills.
 
