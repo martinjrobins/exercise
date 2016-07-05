@@ -28,37 +28,52 @@ Other Note: to get help on a particular git command, use `git <command> --help`
 
 ## Exercise 1: Making Commits
 
-5. Clone the forked repository to your computer
+1. Clone the forked repository to your computer
 
     ~~~bash
     $ git clone <url>
     ~~~
 
-6. Create and add a new file
+2. Create and add a new file
 
     ~~~bash
     $ git add <file>
     ~~~
 
-7. Edit the `Readme.md` file, then examine the state of your repo
+3. Commit the new file
+
+    ~~~bash
+    $ git commit -m "message"
+    ~~~
+
+4. Examine the state of your repo with `git status`. 
 
     ~~~bash
     $ git status
     ~~~
 
-8. Commit everything you have done so far
+5. Edit and save your new file, then add it to the staging area. Finally make a 
+   new commit with the edited file. At all stages use `git status` to see how 
+   your repository changes
 
     ~~~bash
-    $ git commit -a -m "message"
+    $ git add <file>
+    $ git commit -m "message"
     ~~~
 
-9. Make some more commits and view the log
+6. Make some more commits and view the log
 
     ~~~bash
     $ git log 
     ~~~
 
-10. Push the commits to the server
+7. Commit everything you have done so far
+
+    ~~~bash
+    $ git commit -a -m "message"
+    ~~~
+
+8. Push the commits to the server
 
     ~~~bash
     $ git push
@@ -72,7 +87,7 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     $ git checkout -b new_branch
     ~~~
 
-2. Edit the `Readme.md` file and commit the result
+2. Edit your new file and commit the result
 3. Swap back to the master branch
 
     ~~~bash
@@ -97,7 +112,8 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     ~~~~~~
 
 6. resolve the conflict (i.e. edit the conflict markers to match how you want 
-   the file to look like) and commit the result
+   the file to look like) and commit the result. Use `git log` to see the 
+   resulting commits on the master branch.
 7. Create some more commits to both `new_branch` and `master` and rebase 
    `new_branch` onto `master`. Remember that unlike the merge you did 
    previously, your HEAD should be on the branch you are rebasing (i.e 
@@ -106,6 +122,10 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     ~~~bash
     $ git rebase master
     ~~~
+
+8. Look at the state of your new branch using `git log`, you should see the new 
+   commits from `master`. If you like you can now merge `new_branch` to `master` 
+   (this should be a fast-forward merge)
 
 ## Exercise 3: Collaboration
 
