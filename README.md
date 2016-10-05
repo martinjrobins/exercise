@@ -114,6 +114,8 @@ Other Note: to get help on a particular git command, use `git <command> --help`
 6. resolve the conflict (i.e. edit the conflict markers to match how you want 
    the file to look like) and commit the result. Use `git log` to see the 
    resulting commits on the master branch.
+
+<!--
 7. Create some more commits to both `new_branch` and `master` and rebase 
    `new_branch` onto `master`. Remember that unlike the merge you did 
    previously, your HEAD should be on the branch you are rebasing (i.e 
@@ -126,6 +128,7 @@ Other Note: to get help on a particular git command, use `git <command> --help`
 8. Look at the state of your new branch using `git log`, you should see the new 
    commits from `master`. If you like you can now merge `new_branch` to `master` 
    (this should be a fast-forward merge)
+   -->
 
 ## Exercise 3: Collaboration
 
@@ -144,10 +147,9 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     ~~~
 
 3. Both of you make commits to the new branch. Have one person push their 
-   commits to the remote and the other rebase their own commits on top. Swap 
-   roles and repeat the process. Try merging your commits instead of rebasing to 
-   see the difference between the two commands.
+   commits to the remote and the other merge these with their own commits. Swap 
+   roles and repeat the process. 
 
-4. Once you are happy with the state of your new branch, merge or rebase it onto 
-   your `master` branch and bask in the glow of your new Git skills.
+4. Once you are happy with the state of your new branch, merge it onto your 
+   `master` branch and bask in the glow of your new Git skills.
 
