@@ -17,7 +17,9 @@ Other Note: to get help on a particular git command, use `git <command> --help`
     ~~~
 
 2. Create an account (or login) to GitHub at <https://github.com> 
-3. (optional) Generate a ssh-key and add it to your GitHub account
+3. (optional) Generate a ssh-key and add it to your GitHub account (for more 
+   information see 
+   <https://help.github.com/articles/connecting-to-github-with-ssh/>
 
     ~~~bash
     $ ssh-keygen -t rsa -C "email@address.com"
