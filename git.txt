@@ -1,0 +1,6 @@
+# Git Exercise
+
+The following practical exercises should give you some familiarity with using 
+Git. 
+
+new git 2
