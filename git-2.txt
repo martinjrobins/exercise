@@ -1,0 +1,3 @@
+Success!
+
+Authorization was successful. You will be redirected back to Visual Studio Code
