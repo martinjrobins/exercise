@@ -1,2 +1,2 @@
-System.out.println("Update 2");
+System.out.println("New Update");
 System.out.println("Git Exercise");
